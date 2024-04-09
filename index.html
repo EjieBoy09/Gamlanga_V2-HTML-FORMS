@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Solace Food Hub</title>
+</head>
+<body class="Main">
+    <header class='user-form-header'>
+        <h1>Solace Food Hub</h1>
+        <p><em>Hub of Comfort Foods</em></p>
+    </header>
+
+    <form action="" method="get" class="user-info">
+        <div class='form-row'>
+            <label for='full-name'>Name</label>
+            <input id='full-name' name='full-name' placeholder="Ex. Victor Magtanggol" type='text' required />
+        </div>
+        <div class='form-row'>
+            <label for='email'>Email</label>
+            <input id='email' name='email' type='text' placeholder="Ex. username@gmail.com" required />
+        </div>
+        <div class='form-row'>
+            <label for='age'>Age</label>
+            <input id='age' name='age' type='text' required />
+        </div>
+                 
+        <div id="dropdown">
+            <button class="dropdown-toggle">
+                <span>Type of Cuisine</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Spaghetti</a></li>
+                <li class="menu-item"><a href="#">French Fries</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Milk Tea</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Darkchoco</a></li>
+                        <li class="submenu-item"><a href="#">Red Velvet</a></li>
+                        <li class="submenu-item"><a href="#">Hazelnut</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">Burger</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                        <span>Waffles</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Savory Chicken Spread</a></li>
+                        <li class="submenu-item"><a href="#">Choco Hazelnut Cheese Cake </a></li>
+                        <li class="submenu-item"><a href="#">Yema Fudge & Choco Driz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>  
+
+        <fieldset class="payment">
+            <legend>Mode of Payment</legend>
+            <input id='talk-type-1' name='talk-type' type='radio' value='main-stage' checked />
+            <label for='talk-type-1' class='radio-label'>Cash</label>
+            <input id='talk-type-2' name='talk-type' type='radio' value='workshop'/>
+            <label for='talk-type-2' class='radio-label'>G-Cash</label>
+        </fieldset>
+
+        <div class="dine-option-container">
+            <label for="dine-option" class="background-Dine-in-Take-out">Dine-in / Take-out:</label>
+            <select id="dine-option" name="dine-option" required>
+                <option value="">Select Option</option>
+                <option value="dine-in">Dine-in</option>
+                <option value="take-out">Take-out</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="comment">Comment/Instruction and type your Order here</label>
+            <textarea id='comment' name='comment'></textarea>
+        </div>
+
+        <div class="buttons-container">  
+            <button type="submit" class="place-order-button">
+                <a href="Thankyou.html">
+                    Place Order
+                </a>              
+            </button>
+            <button type="button" class="cancel-order-button" required class="comment-input">Cancel Order</button>
+        </div>
+    </form>
+
+    <script src='script.js'></script>
+</body>
+</html>
